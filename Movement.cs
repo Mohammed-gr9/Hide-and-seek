@@ -19,7 +19,7 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Flip();
+        
     }
 
     public void OnMove(InputValue value)
@@ -27,12 +27,7 @@ public class Movement : MonoBehaviour
         input = value.Get<Vector2>();
     }
 
-    void Flip()
-    {
-        Vector3 localScale = transform.localScale;
-        localScale.x *= -1;
-        transform.localScale = localScale;
-    }  
+     
     
     private void FixedUpdate()
     {
@@ -42,3 +37,4 @@ public class Movement : MonoBehaviour
 
 
 }
+
